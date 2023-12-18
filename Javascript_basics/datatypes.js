@@ -29,3 +29,30 @@ console.log("3"+7);
 console.log(3+"7");
 console.log(3+3+"7");
 console.log("2"+(3+3));
+console.log(2>3);
+console.log("2">3); 
+console.log(Number(null));
+//=== strictly check(datatype also)
+//primitive 7 types
+//string,number,boolean,null,undefined,symbol,Bigint
+//Reference or Non primitive
+//Array,objects,functions
+const id1=Symbol("123");
+const id2=Symbol("123");
+console.log(id1===id2);
+console.log(id1==id2);
+console.log(id1);
+const bignumber=1234n;
+console.log(typeof bignumber)
+//Array
+const heros=["megha","anjali"]
+//objects
+let myobj={
+    name:"megs"
+}
+const fun=function(){
+    console.log("heyy")
+}
+console.log(typeof heros);
+console.log(typeof myobj);
+console.log(typeof fun);
