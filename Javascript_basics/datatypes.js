@@ -7,7 +7,25 @@
 4.n=boolean+>true/false
 //null+>standalone value
 undefined
-symbol=>unique  */
-let name="megha"
-console.log(typeof(name));
-//Null is object 
+// symbol=>unique  */
+// let Name="megha"
+// console.log(typeof(Name));
+// //Null is object 
+// let score="23";
+// console.log(typeof(score));
+// let N= Number(score);
+// console.log(typeof(N));
+// let m="33ab"
+// console.log(typeof Number(m));
+// console.log(Number(m));
+let value=3;
+let negvalue=-value;
+console.log(negvalue);
+let str1="megha";
+let str2=" Sinha";
+let str3=str1+str2;
+console.log(str3);
+console.log("3"+7);
+console.log(3+"7");
+console.log(3+3+"7");
+console.log("2"+(3+3));
