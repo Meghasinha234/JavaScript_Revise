@@ -56,3 +56,40 @@ const fun=function(){
 console.log(typeof heros);
 console.log(typeof myobj);
 console.log(typeof fun);
+
+//stack and heap memory
+//stack(primitive),heap(Nonprimitive)
+let myName="megha";
+let Name=myName;
+console.log(Name);
+Name="Anjali";
+console.log(Name);
+console.log(myName);
+let user={
+    email:"megha@gmail.com"
+}
+let user1=user;
+user.email="anjali@gmail.com"
+console.log(user.email);
+console.log(user1.email);
+//string
+const s1="megha";
+const s2=" Sinha";
+console.log(s1+s2);
+console.log(`my name is ${s1} ${s2}`);
+const name= new String('Megha');
+console.log(name[0]);
+console.log(name.length);
+console.log(name.toUpperCase());
+console.log(name.charAt(2));
+console.log(name.indexOf('e'));
+console.log(name.substring(0,3));
+const newstring=name.slice(-5,3);
+console.log(newstring);
+const m="  m";
+console.log(m);
+console.log(m.trim());
+console.log(name.replace('e','h'));
+const s= new String("Anj_ali");
+console.log(s.slice(-4,-3));
+console.log(s.split("_"))
