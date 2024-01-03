@@ -18,3 +18,21 @@ console.log(myarray);
 const myarr2= myarray.splice(1,3);
 console.log(myarr2);
 console.log(myarray);
+const arr1=["megha","anjali"]
+const arr2=["suman","priya"]
+// arr1.push(arr2);
+// console.log(arr1);//array within array
+// console.log(arr1[2][1]);
+const arr3=arr1.concat(arr2);//will return new array after merging both arr1 and arr2
+console.log(arr3);
+//other way to merge array
+const arr4=[...arr1,...arr2];
+console.log(arr4);
+const arr5=[1,2,[2,3],[3,4,5,[1,2]]];
+console.log(arr5.flat(2));
+console.log(Array.isArray("megha"));
+console.log(Array.from("megha"));
+let score1=100;
+let score2=100;
+let score3=100;
+console.log(Array.of(score1,score2,score3))
