@@ -1,5 +1,10 @@
 //singleton  : constructor
 //Object.create
+// const user1=new Object();
+// user1.id="123@12"
+// user1.name="sam"
+// console.log(user1);
+
 //object literals
 const sym=Symbol("key1")// primitive datatype:symbol
 const user={
@@ -25,4 +30,22 @@ console.log(`hey user, ${this.email}`);
 }
 console.log(user.greeting);
 console.log(user.greeting());
+//nested objects
+const user2={
+    fullname:{
+        username:{
+user2Name:"Megha Sinha"
+        }
+    }
+}
+console.log(user2.fullname.username);
 
+const obj1={1:'a',2:'b'}
+const obj2={3:'c',4:'d'}
+console.log({obj1,obj2});
+const obj3=Object.assign({},obj1,obj2)//will return new objecets , object.assign(obj1,obj2) then obj1 will be same as obj3
+const obj4={...obj1,...obj2}
+console.log(obj3);
+console.log(obj4);
+console.log(Object.keys(obj1))
+console.log(Object.values(obj1))
