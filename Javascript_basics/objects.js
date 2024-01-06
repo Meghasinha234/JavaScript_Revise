@@ -49,3 +49,9 @@ console.log(obj3);
 console.log(obj4);
 console.log(Object.keys(obj1))
 console.log(Object.values(obj1))
+
+//instead of user.name you can extract that value 
+const {name} =user;//destructuring
+console.log(name);
+const {name:NAME} =user;
+console.log(NAME);
