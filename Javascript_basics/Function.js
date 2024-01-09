@@ -27,4 +27,11 @@ const user1={
 function object(anyObject){
 console.log(`user name is ${anyObject.name} and Age is ${anyObject.Age}`);
 }
-object(user1)
+object(user1);//semicolon is imp for running invoke function after this
+//immediately invoked function expression(iife)
+(function fun(){
+    console.log("hey");
+})();
+((name)=>{
+    console.log(`Hello ${name}`);
+})("megha")
