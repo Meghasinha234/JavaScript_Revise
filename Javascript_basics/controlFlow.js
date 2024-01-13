@@ -40,3 +40,22 @@ do {
   console.log(index);
   index++;
 } while (index<10);
+//for of
+const arr=[1,2,3,4,5]
+for (const iterator of arr) {
+  console.log(iterator); 
+}
+const map=new Map();
+map.set("IN","INDIA");
+map.set("USA","United state of America");
+
+for (const key of map) {
+  console.log(key);
+  
+}
+//this will not work for objects
+for (const [key,value] of map) {
+  console.log(key,"::",value);
+  
+}
+//objects
