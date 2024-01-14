@@ -59,3 +59,22 @@ for (const [key,value] of map) {
   
 }
 //objects
+const objects={
+  Product:"Mobile",
+  Price:10000
+
+}
+for (const key in objects) {
+ 
+  console.log(key);
+  console.log(objects[key]);
+}
+const arr1=[1,4,6,7];
+arr1.forEach(function(values,index){
+  console.log(values,index);
+})
+//we can use arrow function as well
+
+arr1.forEach((values)=>{
+  console.log(values);
+})
