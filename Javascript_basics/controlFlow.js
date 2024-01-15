@@ -78,3 +78,8 @@ arr1.forEach(function(values,index){
 arr1.forEach((values)=>{
   console.log(values);
 })
+//filter
+const values=arr1.filter((num)=>{
+if(num>1)return num;
+})
+console.log(values);
