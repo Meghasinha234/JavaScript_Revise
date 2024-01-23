@@ -12,6 +12,9 @@
     <div class="day">wednesday</div>
     <div class="day">Thursday</div>
    </div> 
+   <ul class="language">
+<li>Javascript</li>
+   </ul>
 </body>
 <script>
     const parent=document.querySelector('.parent');
@@ -32,5 +35,27 @@
     const text=document.createTextNode("Heading")
     h1.appendChild(text)
     document.body.appendChild(h1)
+    function addLanguage(language){
+       const li= document.createElement('li');
+       li.innerHTML=`${language}`
+       document.querySelector('.language').appendChild(li);
+
+    }
+    addLanguage('C++')
+    //optimized way
+    function AddLanguage(Lang){
+        const li=document.createElement('li');
+        li.appendChild(document.createTextNode(Lang))
+        document.querySelector('.language').appendChild(li)
+    }
+    AddLanguage("python")
+    //Edit
+    const lang=document.querySelector("li:nth-child(2)")
+    const newLang=document.createElement('li')
+   newLang.textContent="Java"
+   lang.replaceWith(newLang)
+   //reemove
+   const first=document.querySelector('li:first-Child')
+   first.remove()
 </script>
 </html>
