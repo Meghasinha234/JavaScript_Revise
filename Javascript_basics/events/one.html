@@ -23,5 +23,20 @@
     document.getElementById('img2').addEventListener('click',function(){
 alert('hey,How are you?')
     },false)
+    //event object
+    document.getElementById('img3').addEventListener('click',function(e){
+        console.log(e);
+    },false)
+    //type,timestamp,defaultprevent,target,sourceelement
+    //false::inside out(bubling)
+    //true::outside to inside(capturing)
+    //e.stopPropagration()
+    //e.preventDefault()
+    document.querySelector('#images').addEventListener('click',function(e){
+console.log(e.target.parentNode);
+let removeit= e.target.parentNode;
+    removeit.remove()
+    },false)
+    
 </script>
 </html>
