@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html events</title>
+</head>
+<body style="background-color: darkgrey;">
+   <h2>Images</h2> 
+   <div>
+    <ul id="images">
+        <li><img width="200px" id="img1" src="https://images.pexels.com/photos/18844139/pexels-photo-18844139.jpeg?cs=srgb&dl=pexels-lisa-fotios-18844139.jpg&fm=jpg&_gl=1*l0nx75*_ga*OTkxNzcxNzY5LjE3MDYwNzk4OTk.*_ga_8JE65Q40S6*MTcwNjA3OTkwMS4xLjEuMTcwNjA3OTkyMy4wLjAuMA.." alt=""></li>
+        <li><img width="200px" id="img2" src="https://images.pexels.com/photos/19862554/pexels-photo-19862554.jpeg?cs=srgb&dl=pexels-pascal-bronsert-19862554.jpg&fm=jpg&_gl=1*igsv3*_ga*OTkxNzcxNzY5LjE3MDYwNzk4OTk.*_ga_8JE65Q40S6*MTcwNjA3OTkwMS4xLjEuMTcwNjA4MDIxNC4wLjAuMA.." alt=""></li>
+        <li><img width="200px" id="img3" src="https://images.pexels.com/photos/19125266/pexels-photo-19125266.jpeg?cs=srgb&dl=pexels-alper-tunga-dany%C4%B1ld%C4%B1z-19125266.jpg&fm=jpg&_gl=1*1hd4psc*_ga*OTkxNzcxNzY5LjE3MDYwNzk4OTk.*_ga_8JE65Q40S6*MTcwNjA3OTkwMS4xLjEuMTcwNjA4MDAyNS4wLjAuMA.." alt=""></li>
+        <li><a href="https://Google.com">Google</a></li>
+    </ul>
+   </div>
+</body>
+<script>
+    document.getElementById('img1').onclick=function(){
+        alert("hey, Good morning")
+    }
+    document.getElementById('img2').addEventListener('click',function(){
+alert('hey,How are you?')
+    },false)
+</script>
+</html>
